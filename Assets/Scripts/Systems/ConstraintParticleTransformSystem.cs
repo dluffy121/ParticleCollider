@@ -1,8 +1,10 @@
 using Unity.Entities;
 using Unity.Burst;
 using Unity.Transforms;
+using Unity.Physics.Systems;
 
-public partial struct ConstraintParticleTransformSystem// : ISystem
+[UpdateAfter(typeof(PhysicsSimulationGroup))]
+public partial struct ConstraintParticleTransformSystem : ISystem
 {
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
