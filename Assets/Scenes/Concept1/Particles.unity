@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 1971658159480996018, guid: 9e86ac30650820045a860d79a688b99d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 1971658159480996018, guid: 9e86ac30650820045a860d79a688b99d,
         type: 3}
@@ -534,13 +534,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prefab: {fileID: 4442690603360053738, guid: d2ad2880ffb27fb419da5bcae1ec8d81, type: 3}
-  SpawnRate: 0.01
+  SpawnRate: 0
   SpawnRange:
   - {x: -40, y: 0, z: -25}
   - {x: 40, y: 0, z: 25}
   SpawnImpulse:
   - {x: -50, y: 0, z: -50}
   - {x: 50, y: 0, z: 50}
+  SpawnCount: 500
 --- !u!1001 &4851117905180361628
 PrefabInstance:
   m_ObjectHideFlags: 0
